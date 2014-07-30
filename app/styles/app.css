@@ -1,11 +1,26 @@
 html, body {
-  margin: 20px;
+  margin: 0px;
 }
-
+.main{
+  margin:20px;
+}
 .banner {
   min-height:200px;
 }
-.navbar-brand h1{
-  font-size:340%;
-  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+.navbar-brand{
+  font-size:360%;
+  margin:30px;
+  text-shadow: 2px 2px 1px rgba(150, 150, 150, 1);
+}
+
+.navbar-default .navbar-nav > li > a {
+  color:#FFF;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color:#666;
+}
+
+.container-fluid.nav-container, .nav > li > a.active, .nav > li > a.active:hover {
+  color:#069;
+  background: rgba(256,256,256,.3);
 }

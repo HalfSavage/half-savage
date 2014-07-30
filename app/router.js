@@ -5,6 +5,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('index');
+  this.route('forums');
+  this.route('events');
 });
 
 export default Router;

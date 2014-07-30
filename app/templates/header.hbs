@@ -1,9 +1,20 @@
-{{#nav-bar}}
-  {{#header-background background=background}}
+{{#nav-bar background=background}}
   <div class="container-fluid">
     <div class="navbar-header">
-      {{nav-bar-brand title=brandName color=color}}
+      {{#link-to 'index' class="navbar-brand"}}
+        {{nav-bar-brand title=brandName color=color}}
+      {{/link-to}}
     </div>
   </div>
-  {{/header-background}}
+  <div class="container-fluid nav-container">
+    <ul class="nav navbar-nav">
+      {{#each item in navItems}}
+        <li>
+          {{#link-to item}}
+            {{item}}
+          {{/link-to}}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
 {{/nav-bar}}

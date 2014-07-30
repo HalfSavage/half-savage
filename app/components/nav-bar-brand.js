@@ -2,8 +2,7 @@ import Ember from 'ember';
 var NavBarBrandComponent = Ember.Component.extend({
   color:'#FFF',
   title: 'Brand',
-  tagName:'a',
-  classNames:['navbar-brand'],
+  tagName:'span',
   attributeBindings:['style'],
   style: function(){
     return 'color:'+this.get('color')+';';
