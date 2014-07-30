@@ -6,6 +6,7 @@ Ember.MODEL_FACTORY_INJECTIONS = true;
 
 var App = Ember.Application.extend({
   modulePrefix: 'half-savage', // TODO: loaded via config
+  podModulePrefix: 'half-savage/pods',
   Resolver: Resolver
 });
 
