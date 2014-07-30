@@ -5,7 +5,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('index');
+  this.route('index', {path:'/'});
   this.route('forums');
   this.route('events');
 });
